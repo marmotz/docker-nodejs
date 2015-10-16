@@ -5,7 +5,7 @@ USER root
 # Install Node.js
 RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install -y nodejs
-RUN npm install bower
+RUN npm install -g bower
 
 ADD init_nodejs.sh /
 
