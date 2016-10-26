@@ -11,6 +11,8 @@ ADD launch_nodejs.sh /
 
 USER nonrootuser
 
+EXPOSE 80
+
 VOLUME ["/data"]
 WORKDIR /data
 
