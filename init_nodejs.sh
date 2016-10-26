@@ -1,3 +1,5 @@
 #!/bin/bash
 
-npm install
+if [ ! -d node_modules ]; then
+    npm install
+fi
