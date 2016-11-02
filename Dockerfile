@@ -19,6 +19,9 @@ RUN cd / && \
 ADD init_nodejs.sh /
 ADD launch_nodejs.sh /
 
+# Clean
+RUN rm -rf /var/lib/apt/lists/*
+
 USER nonrootuser
 
 EXPOSE 80
