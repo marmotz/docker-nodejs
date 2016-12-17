@@ -1,5 +1,7 @@
 #!/bin/bash
 
+npm set progress=false
+
 if [ ! -d node_modules ]; then
     npm install
 fi
